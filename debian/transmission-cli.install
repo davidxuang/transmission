@@ -1,5 +1,5 @@
 usr/bin/transmission-cli
-usr/bin/transmission-remote
 usr/bin/transmission-create
 usr/bin/transmission-edit
+usr/bin/transmission-remote
 usr/bin/transmission-show
