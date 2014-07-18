@@ -1,3 +1,11 @@
+transmission (2.84-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream release:
+    - Fixes build with newer miniupnpc (Closes: #754982).
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 18 Jul 2014 10:35:51 +0000
+
 transmission (2.82-1.1) unstable; urgency=medium
 
   * Non-maintainer upload.
