@@ -4,6 +4,8 @@ transmission (2.84-0.1) unstable; urgency=medium
   * New upstream release:
     - Fixes build with newer miniupnpc (Closes: #754982).
   * Ran wrap-and-sort.
+  * Fix upstream service file (Closes: #718624).
+  * Refresh fix_freebsd_quota_include.patch.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 18 Jul 2014 10:35:51 +0000
 

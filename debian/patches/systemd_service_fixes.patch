@@ -1,13 +1,27 @@
-Index: repo/daemon/transmission-daemon.service
-===================================================================
---- repo.orig/daemon/transmission-daemon.service	2013-07-27 21:34:53.524172453 +0200
-+++ repo/daemon/transmission-daemon.service	2013-09-15 00:51:18.100530232 +0200
-@@ -3,7 +3,7 @@
+Description: fix segfaults due to wrong systemd service file
+ The service file has the following line:
+  User=transmission
+ .
+ It should be replaced with:
+  User=debian-transmission
+ .
+ Moreover, the type is set to "notify", but it never sends a signal, so systemd
+ kills it. Until this has been explained, this line should be removed.
+Author: Adrien CLERC <bugs-debian@antipoul.fr>
+Bug-Debian: https://bugs.debian.org/718624
+Origin: other, https://bugs.debian.org/718624
+Forwarded: no
+Last-Update: 2014-07-18
+
+--- transmission-2.84.orig/daemon/transmission-daemon.service
++++ transmission-2.84/daemon/transmission-daemon.service
+@@ -3,8 +3,7 @@ Description=Transmission BitTorrent Daem
  After=network.target
  
  [Service]
 -User=transmission
+-Type=notify
 +User=debian-transmission
- Type=notify
  ExecStart=/usr/bin/transmission-daemon -f --log-error
+ ExecReload=/bin/kill -s HUP $MAINPID
  
