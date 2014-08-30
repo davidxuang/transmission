@@ -2,7 +2,7 @@ transmission (2.84-0.1) unstable; urgency=medium
 
   * Non-maintainer upload.
   * New upstream release:
-    - Fixes build with newer miniupnpc (Closes: #754982).
+    - Fixes build with newer miniupnpc (Closes: #754982, #757365).
   * Ran wrap-and-sort.
   * Fix upstream service file (Closes: #718624).
   * Refresh fix_freebsd_quota_include.patch.
