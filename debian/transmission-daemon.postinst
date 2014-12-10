@@ -15,22 +15,25 @@ chperms() {
 }
 
 case "$1" in
-  configure|upgrade)
-    if ! id -u debian-transmission > /dev/null; then
+  configure)
+    if ! getent passwd debian-transmission > /dev/null; then
         adduser --quiet \
                 --system \
                 --group \
                 --no-create-home \
+                --disabled-password \
+                --home /var/lib/transmission-daemon \
                 debian-transmission
     fi
 
-    chperms debian-transmission debian-transmission 4750 /var/lib/transmission-daemon/info
+    chperms debian-transmission debian-transmission 4750 /var/lib/transmission-daemon/.config/transmission-daemon
 
     chperms debian-transmission debian-transmission 4775 /var/lib/transmission-daemon/downloads
 
     chperms debian-transmission debian-transmission 0660 /etc/transmission-daemon/settings.json
 
     chperms root debian-transmission 2775 /etc/transmission-daemon
+
   ;;
 esac
 

@@ -4,8 +4,8 @@ set -e
 
 case "$1" in
   purge)
-    if [ -d /var/lib/transmission-daemon/info ]; then
-      rm -rf /var/lib/transmission-daemon/info/*
+    if [ -d /var/lib/transmission-daemon/.config ]; then
+      rm -rf /var/lib/transmission-daemon/.config/*
     fi
   ;;
 esac

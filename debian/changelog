@@ -1,3 +1,34 @@
+transmission (2.84-0.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * transmission-daemon.postinst:
+    - Change home directory of transmission-daemon to
+      /var/lib/transmission-daemon from /home/debian-transmission.
+      Thanks to Alex Peters for the report. (Closes: #734467)
+    - Disable password authentication for debian-transmission user for
+      improved security. Logins with e.g. SSH RSA keys are still possible.
+    - Check existence of debian-transmission user with getent passwd
+      debian-transmission instead of id.
+  * Add transmission-daemon.preinst:
+    - Fix permissions in /var/lib/transmission-daemon and use
+      /var/lib/transmission-daemon as the new home directory.
+    - Move old configuration files to appropriate config directory
+      /var/lib/transmission-daemon/.config/transmission-daemon.
+      All together this ensures that transmission-daemon will not segfault
+      when systemd is the default init system.
+      Thanks to Andrei Popescu and Antoine Legonidec for the report and
+      additional tests. (Closes: #718624)
+  * transmission-daemon.links:
+    - Link settings.json from /etc/transmission-daemon/settings.json to
+      /var/lib/transmission-daemon/.config/transmission-daemon.
+    - Link /var/lib/transmission-daemon/.config/transmission-daemon to
+      /var/lib/transmission-daemon/info due to compatibility reasons with
+      the old sysv-rc init script settings.
+  * transmission-daemon.dirs:
+    - Do not create /var/lib/transmission-daemon/info anymore.
+
+ -- Markus Koschany <apo@gambaru.de>  Wed, 10 Dec 2014 08:16:13 +0100
+
 transmission (2.84-0.1) unstable; urgency=medium
 
   * Non-maintainer upload.
