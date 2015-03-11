@@ -1,7 +1,8 @@
 Source: transmission
 Section: net
 Priority: optional
-Maintainer: Leo Costela <costela@debian.org>
+Maintainer: Sandro Tosi <morph@debian.org>
+Uploaders: Leo Costela <costela@debian.org>
 Build-Depends: autotools-dev,
                debhelper (>= 8),
                dh-autoreconf,
