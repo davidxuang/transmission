@@ -26,7 +26,6 @@ Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/transmission.git
 Vcs-Git: git://anonscm.debian.org/collab-maint/transmission.git
 Homepage: http://www.transmissionbt.com/
-Bugs: https://trac.transmissionbt.com/
 
 Package: transmission
 Architecture: all
