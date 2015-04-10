@@ -1,3 +1,17 @@
+transmission (2.84-1) experimental; urgency=medium
+
+  * Acknowledge NMUs: thanks to Boris Pek, Thomas Goirand, Markus Koschany;
+    Closes: #737366, #718624, #754982, #757365, #718624, #734467
+  * [323b2ad] Set me as maintaner, Leo as uploader (with Leo's blessing)
+  * [3eecf54] removed Bugs field, as it was causing bugs to be sent to upstream;
+    Closes: #740944
+  * [e5bd0af] drop gconf integration, no longer needed; Closes: #741069,
+    #745936, #756823
+  * [0432bb4] bump Standards-Version to 3.9.6 (no changes needed)
+  * [fd2b694] transition to libsystemd-dev; Closes: #779760
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 10 Apr 2015 11:21:31 +0100
+
 transmission (2.84-0.2) unstable; urgency=medium
 
   * Non-maintainer upload.
