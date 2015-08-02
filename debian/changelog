@@ -1,3 +1,9 @@
+transmission (2.84-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 02 Aug 2015 18:01:47 +0100
+
 transmission (2.84-1) experimental; urgency=medium
 
   * Acknowledge NMUs: thanks to Boris Pek, Thomas Goirand, Markus Koschany;
