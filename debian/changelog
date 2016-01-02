@@ -1,3 +1,12 @@
+transmission (2.84-3) unstable; urgency=medium
+
+  * [6b8bb2a] fix a SIGSEGV due to racing in list node allocation;
+    Closes: #808333
+  * [40ec5cb] remove libappindicator3-dev from b-d; Closes: #801299
+  * [7ceb8fe] Fix black lines to be rendered when scrolling; Closes: #801300
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 02 Jan 2016 17:54:56 +0000
+
 transmission (2.84-2) unstable; urgency=medium
 
   * upload to unstable
