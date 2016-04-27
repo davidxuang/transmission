@@ -34,6 +34,7 @@ override_dh_auto_clean:
 	dh_auto_clean
 	dh_auto_clean -Dqt
 	rm -f qt/translations/*.qm
+	rm -f m4/glib-gettext.m4
 
 override_dh_installchangelogs:
 	dh_installchangelogs -p transmission-common NEWS
