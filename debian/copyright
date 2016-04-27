@@ -3,7 +3,7 @@ Upstream-Name: Transmission
 Source: http://transmissionbt.com
 
 Files: *
-Copyright: 2005-2012 Transmission authors and contributors
+Copyright: 2005-2016 Transmission authors and contributors
 License: Expat
 
 Files: debian/*
