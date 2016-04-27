@@ -5,8 +5,10 @@ transmission (2.92-1) UNRELEASED; urgency=medium
     - add copyright/license for my packaging work
     - update upstream copyright years
     - update for new upstream code
+  * debian/watch
+    - dont run uupdate
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 19:53:27 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 19:54:05 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
