@@ -1,5 +1,4 @@
 systemd_service_fixes.patch
 fix_freebsd_quota_include.patch
 transition_to_libsystemd.patch
-bts808333_changeset_14319.patch
 bts801300_changeset_14519.diff
