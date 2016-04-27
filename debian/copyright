@@ -2,11 +2,13 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Transmission
 Source: http://transmissionbt.com
 
-
 Files: *
 Copyright: 2005-2012 Transmission authors and contributors
 License: Expat
 
+Files: debian/*
+Copyright: 2015-2016 Sandro Tosi <morph@debian.org>
+License: Expat
 
 Files: libtransmission/ConvertUTF.*
 Copyright: 2001-2004 Unicode, Inc
@@ -29,11 +31,9 @@ License: other
  for internal or external distribution as long as this notice
  remains attached.
 
-
 Files: libtransmission/JSON_parser.*
 Copyright: 2006-2010 JSON.org
 License: Expat
-
 
 Files: libtransmission/bencode.* libtransmission/blocklist.*
        libtransmission/clients.* libtransmission/crypto.*
@@ -64,11 +64,9 @@ License: GPL-2
  On Debian systems, the complete text of the GNU General Public License
  can be found in /usr/share/common-licenses/GPL-2
 
-
 Files: third-party/dht/*
 Copyright: 2009-2011 Juliusz Chroboczek
 License: Expat
-
 
 Files: third-party/libnatpmp/* third-party/miniupnp/*
 Copyright: 2005-2011, Thomas BERNARD <miniupnp@free.fr>
@@ -96,11 +94,9 @@ License: BSD-3-clause
  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  POSSIBILITY OF SUCH DAMAGE.
 
-
 Files: third-party/libutp/*
 Copyright: 2010 BitTorrent, Inc.
 License: Expat
-
 
 License: Expat
  Permission is hereby granted, free of charge, to any person obtaining a copy

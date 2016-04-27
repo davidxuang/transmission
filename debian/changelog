@@ -1,8 +1,10 @@
 transmission (2.92-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * debian/copyright
+    - add copyright/license for my packaging work
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 15:37:04 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 15:42:49 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
