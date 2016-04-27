@@ -9,10 +9,10 @@ transmission (2.92-1) UNRELEASED; urgency=medium
     - dont run uupdate
   * debian/patches/fix_freebsd_quota_include.patch
     - refresh
-  * debian/patches/bts808333_changeset_14319.patch
+  * debian/patches/{bts808333_changeset_14319.patch, bts801300_changeset_14519.diff}
     - drop, merged upstream
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 20:40:35 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 20:41:56 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
