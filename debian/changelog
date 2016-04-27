@@ -13,8 +13,9 @@ transmission (2.92-1) UNRELEASED; urgency=medium
     - drop, merged upstream
   * debian/control
     - add cmake to b-d
+    - bump Standards-Version to 3.9.8 (no changes needed)
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 22:34:28 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 22:34:59 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
