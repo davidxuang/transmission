@@ -11,8 +11,10 @@ transmission (2.92-1) UNRELEASED; urgency=medium
     - refresh
   * debian/patches/{bts808333_changeset_14319.patch, bts801300_changeset_14519.diff}
     - drop, merged upstream
+  * debian/control
+    - add cmake to b-d
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 20:41:56 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 22:34:28 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
