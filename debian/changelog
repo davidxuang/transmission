@@ -7,8 +7,10 @@ transmission (2.92-1) UNRELEASED; urgency=medium
     - update for new upstream code
   * debian/watch
     - dont run uupdate
+  * debian/patches/fix_freebsd_quota_include.patch
+    - refresh
 
- -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 19:54:05 +0100
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 Apr 2016 20:38:29 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
