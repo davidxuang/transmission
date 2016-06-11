@@ -1,6 +1,6 @@
 transmission (2.92-1) UNRELEASED; urgency=medium
 
-  * New upstream release
+  * New upstream release; Closes: #824990
   * debian/copyright
     - add copyright/license for my packaging work
     - update upstream copyright years
