@@ -19,20 +19,14 @@ endif
 	dh $@ $(DH_EXTRA_ARGS)
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
-		--enable-cli --enable-daemon \
-		--enable-external-natpmp
-	# qt client has a separate build-system
-	dh_auto_configure -Dqt
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_DAEMON=ON -DENABLE_GTK=ON -DENABLE_UTILS=ON -DENABLE_QT=ON -DUSE_QT5=ON -DUSE_SYSTEM_NATPMP=ON -DENABLE_CLI=ON
 
 override_dh_auto_build:
 	dh_auto_build
-	dh_auto_build -Dqt
 	(cd qt && lrelease qtr.pro)
 
 override_dh_auto_clean:
 	dh_auto_clean
-	dh_auto_clean -Dqt
 	rm -f qt/translations/*.qm
 	rm -f m4/glib-gettext.m4
 
@@ -48,7 +42,6 @@ override_dh_install:
 
 override_dh_auto_install:
 	dh_auto_install
-	dh_auto_install -Dqt -- INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
 
 override_dh_strip:
 	dh_strip --dbg-package=transmission-dbg
