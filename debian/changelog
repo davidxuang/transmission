@@ -1,4 +1,4 @@
-transmission (2.92-1) UNRELEASED; urgency=medium
+transmission (2.92-1) unstable; urgency=medium
 
   * New upstream release; Closes: #824990, #808359
   * debian/copyright
@@ -21,7 +21,7 @@ transmission (2.92-1) UNRELEASED; urgency=medium
   * bump compat level to 9
   * drop explicit dbg package and use automatic debsym, patch from Ubuntu
 
- -- Sandro Tosi <morph@debian.org>  Sat, 03 Sep 2016 18:01:42 +0100
+ -- Sandro Tosi <morph@debian.org>  Sat, 03 Sep 2016 18:02:24 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
