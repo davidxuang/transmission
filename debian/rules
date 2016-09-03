@@ -19,14 +19,20 @@ endif
 	dh $@ $(DH_EXTRA_ARGS)
 
 override_dh_auto_configure:
-	cmake -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_DAEMON=ON -DENABLE_GTK=ON -DENABLE_UTILS=ON -DENABLE_QT=ON -DUSE_QT5=ON -DUSE_SYSTEM_NATPMP=ON -DENABLE_CLI=ON -DDHT_LIBRARY=third-party/dht
+	dh_auto_configure -Sautoconf -- \
+		--enable-cli --enable-daemon \
+		--enable-external-natpmp
+	# qt client has a separate build-system
+	dh_auto_configure -Sqmake -Dqt
 
 override_dh_auto_build:
-	dh_auto_build
+	dh_auto_build -Sautoconf
+	dh_auto_build -Sqmake -Dqt
 	(cd qt && lrelease qtr.pro)
 
 override_dh_auto_clean:
-	dh_auto_clean
+	dh_auto_clean -Sautoconf
+	dh_auto_clean -Sqmake -Dqt
 	rm -f qt/translations/*.qm
 	rm -f m4/glib-gettext.m4
 
@@ -41,7 +47,8 @@ override_dh_install:
 	dh_install --list-missing -X LICENSE # extra copy in web dir - costela 2008-08-15
 
 override_dh_auto_install:
-	dh_auto_install
+	dh_auto_install -Sautoconf
+	dh_auto_install -Sqmake -Dqt -- INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
 
 override_dh_strip:
 	dh_strip --dbg-package=transmission-dbg

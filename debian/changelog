@@ -17,9 +17,9 @@ transmission (2.92-1) UNRELEASED; urgency=medium
   * debian/rules
     - remove m4/glib-gettext.m4 as now out of sync with system-wide
       /usr/share/aclocal/glib-gettext.m4; Closes: #820785
-    - build transmission using cmake
+    - use autoconf and qmake when building transmission, patch from Ubuntu
 
- -- Sandro Tosi <morph@debian.org>  Sat, 11 Jun 2016 12:01:44 +0100
+ -- Sandro Tosi <morph@debian.org>  Sat, 03 Sep 2016 17:54:25 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 
