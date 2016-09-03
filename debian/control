@@ -5,7 +5,7 @@ Maintainer: Sandro Tosi <morph@debian.org>
 Uploaders: Leo Costela <costela@debian.org>
 Build-Depends: autotools-dev,
                cmake,
-               debhelper (>= 8),
+               debhelper (>= 9.20160114~),
                dh-autoreconf,
                dh-systemd [linux-any],
                intltool (>= 0.40),
