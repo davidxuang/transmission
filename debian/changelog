@@ -19,8 +19,9 @@ transmission (2.92-1) UNRELEASED; urgency=medium
       /usr/share/aclocal/glib-gettext.m4; Closes: #820785
     - use autoconf and qmake when building transmission, patch from Ubuntu
   * bump compat level to 9
+  * drop explicit dbg package and use automatic debsym, patch from Ubuntu
 
- -- Sandro Tosi <morph@debian.org>  Sat, 03 Sep 2016 18:00:30 +0100
+ -- Sandro Tosi <morph@debian.org>  Sat, 03 Sep 2016 18:01:42 +0100
 
 transmission (2.84-3) unstable; urgency=medium
 

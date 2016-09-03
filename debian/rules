@@ -51,7 +51,7 @@ override_dh_auto_install:
 	dh_auto_install -Sqmake -Dqt -- INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
 
 override_dh_strip:
-	dh_strip --dbg-package=transmission-dbg
+	dh_strip --dbgsym-migration='transmission-dbg (<< 2.92-1~)'
 
 override_dh_bugfiles:
 	dh_bugfiles -A

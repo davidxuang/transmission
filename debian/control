@@ -54,25 +54,6 @@ Description: lightweight BitTorrent client (common files)
  This package contains the common files for the different transmission
  versions.
 
-Package: transmission-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: transmission-cli,
-         transmission-common,
-         transmission-daemon,
-         transmission-gtk,
-         transmission-qt,
-         ${misc:Depends}
-Description: lightweight BitTorrent client (debug symbols)
- Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
- and daemon form). All its incarnations feature a very simple, intuitive
- interface on top on an efficient, cross-platform back-end.
- .
- This package contains the debug symbols for the different transmission
- executables. Most users won't need this, but please install it before
- submitting bugs with crashes.
-
 Package: transmission-cli
 Architecture: any
 Depends: transmission-common (= ${source:Version}),
