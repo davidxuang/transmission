@@ -8,8 +8,10 @@ transmission (2.92-2) UNRELEASED; urgency=medium
     - extend packaging copyright years
   * debian/control
     - use HTTPS for Vcs-* fields
+  * debian/patches/transmission-daemon_execstop_service.patch
+    - add ExecStop to transmission-daemon service file; Closes: #831467
 
- -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 18:40:59 -0500
+ -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 18:57:38 -0500
 
 transmission (2.92-1) unstable; urgency=medium
 
