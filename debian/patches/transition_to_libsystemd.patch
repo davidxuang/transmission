@@ -12,7 +12,7 @@ Last-Update: 2015-04-04
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/configure.ac
 +++ b/configure.ac
-@@ -173,15 +173,15 @@ dnl
+@@ -240,15 +240,15 @@ dnl
  dnl file monitoring for the daemon
  
  # Check whether to enable systemd startup notification.
