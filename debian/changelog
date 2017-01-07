@@ -3,8 +3,10 @@ transmission (2.92-2) UNRELEASED; urgency=medium
   * debian/watch
     - point to transmission-release github repository
   * Support OpenSSL 1.1.0
+  * debian/copyright
+    - point source field to github
 
- -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 11:52:59 -0500
+ -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 13:03:14 -0500
 
 transmission (2.92-1) unstable; urgency=medium
 
