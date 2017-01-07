@@ -2,7 +2,7 @@ transmission (2.92-2) UNRELEASED; urgency=medium
 
   * debian/watch
     - point to transmission-release github repository
-  * Support OpenSSL 1.1.0
+  * Support OpenSSL 1.1.0; Closes: #835800
   * debian/copyright
     - point source field to github
     - extend packaging copyright years
