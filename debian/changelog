@@ -6,8 +6,10 @@ transmission (2.92-2) UNRELEASED; urgency=medium
   * debian/copyright
     - point source field to github
     - extend packaging copyright years
+  * debian/control
+    - use HTTPS for Vcs-* fields
 
- -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 13:03:39 -0500
+ -- Sandro Tosi <morph@debian.org>  Sat, 07 Jan 2017 18:40:59 -0500
 
 transmission (2.92-1) unstable; urgency=medium
 
