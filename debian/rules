@@ -23,7 +23,7 @@ override_dh_auto_configure:
 		--enable-cli --enable-daemon \
 		--enable-external-natpmp
 	# qt client has a separate build-system
-	dh_auto_configure -Sqmake -Dqt
+	dh_auto_configure -Sqmake -Dqt -- DEFINES+=TRANSLATIONS_DIR=\\\\\\\"/usr/share/qt5/translations\\\\\\\"
 
 override_dh_auto_build:
 	dh_auto_build -Sautoconf
