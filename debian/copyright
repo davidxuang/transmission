@@ -7,7 +7,7 @@ Copyright: 2005-2016 Transmission authors and contributors
 License: Expat
 
 Files: debian/*
-Copyright: 2015-2017 Sandro Tosi <morph@debian.org>
+Copyright: 2015-2018 Sandro Tosi <morph@debian.org>
 License: Expat
 
 Files: libtransmission/ConvertUTF.*
