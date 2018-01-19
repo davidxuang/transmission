@@ -9,8 +9,9 @@ transmission (2.92-3) UNRELEASED; urgency=medium
     - fix translation load in Qt frontend; patch by Rohan Garg; Closes: #771164
   * debian/control
     - bump Standards-Version t0 4.1.3 (no changes needed)
+    - update versioned b-d on debhelper, so that we can drop dh-systemd
 
- -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 23:28:55 -0500
+ -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 23:31:18 -0500
 
 transmission (2.92-2) unstable; urgency=medium
 
