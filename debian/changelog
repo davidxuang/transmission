@@ -5,8 +5,10 @@ transmission (2.92-3) UNRELEASED; urgency=medium
       Closes: #886990
   * debian/patches/bts885151_fix_ftcbfs_ac_run_ifelse.patch
     - fix a FTCBFS due to use of AC_RUN_IFELSE; Closes: #885151
+  * debian/{rules, transmission-qt.install}
+    - fix translation load in Qt frontend; patch by Rohan Garg; Closes: #771164
 
- -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 22:35:26 -0500
+ -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 23:24:42 -0500
 
 transmission (2.92-2) unstable; urgency=medium
 
