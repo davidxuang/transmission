@@ -1,4 +1,4 @@
-transmission (2.92-3) UNRELEASED; urgency=medium
+transmission (2.92-3) unstable; urgency=medium
 
   * debian/patches/transmission-fix-dns-rebinding-vuln.patch
     - fix RCE execution via dns rebinding attach; fixes CVE-2018-5702;
@@ -13,7 +13,7 @@ transmission (2.92-3) UNRELEASED; urgency=medium
   * debian/copyright
     - extend packaging copyright years
 
- -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 23:33:41 -0500
+ -- Sandro Tosi <morph@debian.org>  Thu, 18 Jan 2018 23:34:22 -0500
 
 transmission (2.92-2) unstable; urgency=medium
 
