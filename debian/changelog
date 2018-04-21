@@ -1,6 +1,6 @@
 transmission (2.93-1) UNRELEASED; urgency=medium
 
-  * New upstream release; Closes: #890325, #857511
+  * New upstream release; Closes: #890325, #857511, #895869
   * debian/patches/*
     - drop patches merged upstream
   * debian/control
