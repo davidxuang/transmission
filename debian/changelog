@@ -3,8 +3,10 @@ transmission (2.93-1) UNRELEASED; urgency=medium
   * New upstream release; Closes: #890325, #857511
   * debian/patches/*
     - drop patches merged upstream
+  * debian/control
+    - bump Standards-Version to 4.1.4 (no changes needed)
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:00:41 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:01:10 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 
