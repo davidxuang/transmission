@@ -8,8 +8,10 @@ transmission (2.93-1) UNRELEASED; urgency=medium
     - update Homepage field to use HTTPS
     - update Vcs-* fields to point to salsa
   * enable Ayatana AppIndicator support; Closes: #894410
+  * set QT_SELECT=qt5 rather than build-depending on qt5-default; patch by
+    Helmut Grohne; Closes: #887849
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 19:13:22 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 19:17:21 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 
