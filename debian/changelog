@@ -5,8 +5,9 @@ transmission (2.93-1) UNRELEASED; urgency=medium
     - drop patches merged upstream
   * debian/control
     - bump Standards-Version to 4.1.4 (no changes needed)
+    - update Homepage field to use HTTPS
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:01:10 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:01:58 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 
