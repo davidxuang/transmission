@@ -6,9 +6,10 @@ transmission (2.93-1) UNRELEASED; urgency=medium
   * debian/control
     - bump Standards-Version to 4.1.4 (no changes needed)
     - update Homepage field to use HTTPS
+    - update Vcs-* fields to point to salsa
   * enable Ayatana AppIndicator support; Closes: #894410
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:22:06 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 19:13:22 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 
