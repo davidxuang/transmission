@@ -1,4 +1,4 @@
-transmission (2.93-1) UNRELEASED; urgency=medium
+transmission (2.93-1) unstable; urgency=medium
 
   * New upstream release; Closes: #890325, #857511, #895869
   * debian/patches/*
@@ -11,7 +11,7 @@ transmission (2.93-1) UNRELEASED; urgency=medium
   * set QT_SELECT=qt5 rather than build-depending on qt5-default; patch by
     Helmut Grohne; Closes: #887849
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 19:17:21 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 19:19:08 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 
