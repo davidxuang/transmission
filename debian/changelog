@@ -1,8 +1,10 @@
 transmission (2.93-1) UNRELEASED; urgency=medium
 
   * New upstream release; Closes: #890325, #857511
+  * debian/patches/*
+    - drop patches merged upstream
 
- -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 17:55:52 -0400
+ -- Sandro Tosi <morph@debian.org>  Sat, 21 Apr 2018 18:00:41 -0400
 
 transmission (2.92-3) unstable; urgency=medium
 

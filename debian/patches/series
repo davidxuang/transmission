@@ -1,8 +1,6 @@
 systemd_service_fixes.patch
 fix_freebsd_quota_include.patch
 transition_to_libsystemd.patch
-f91cf5ad8c677b61ceb0bf5877b87f9e93256dd7.patch
 8c8386a7f3f482a9c917f51d28e0042e55f56b3e.patch
 transmission-daemon_execstop_service.patch
-transmission-fix-dns-rebinding-vuln.patch
 bts885151_fix_ftcbfs_ac_run_ifelse.patch
