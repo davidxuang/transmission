@@ -1,3 +1,11 @@
+transmission (2.93-2) UNRELEASED; urgency=medium
+
+  * debian/control
+    - add qt5-qmake:native to b-d, to make it cross buildable; patch by Helmut
+      Grohne; Closes: #896699
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 26 Apr 2018 22:50:29 -0400
+
 transmission (2.93-1) unstable; urgency=medium
 
   * New upstream release; Closes: #890325, #857511, #895869
