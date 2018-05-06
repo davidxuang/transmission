@@ -2,10 +2,11 @@ transmission (2.94-1) UNRELEASED; urgency=medium
 
   * New upstream release
   * refresh patches
-  * debian/patches/8c8386a7f3f482a9c917f51d28e0042e55f56b3e.patch
+  * debian/patches/8c8386a7f3f482a9c917f51d28e0042e55f56b3e.patch,
+    debian/patches/bts885151_fix_ftcbfs_ac_run_ifelse.patch
     - dropped, released upstream
 
- -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 15:53:44 -0400
+ -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 15:54:55 -0400
 
 transmission (2.93-2) unstable; urgency=medium
 

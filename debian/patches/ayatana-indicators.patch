@@ -8,10 +8,10 @@ Subject: Build against Ayatana AppIndicator
  2 files changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 904f813..134e711 100644
+index 9b19ae7..9331c47 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -522,7 +522,7 @@ if test "x$with_gtk" = "xyes" ; then
+@@ -526,7 +526,7 @@ if test "x$with_gtk" = "xyes" ; then
                                gmodule-2.0 >= $GLIB_MINIMUM
                                gthread-2.0 >= $GLIB_MINIMUM])
      PKG_CHECK_MODULES([LIBAPPINDICATOR],
@@ -20,7 +20,7 @@ index 904f813..134e711 100644
                        [have_libappindicator=yes],
                        [have_libappindicator=no])
      if test "x$have_libappindicator" = "xyes"; then
-@@ -686,7 +686,7 @@ Configuration:
+@@ -690,7 +690,7 @@ Configuration:
     Build Command-Line client:                         ${build_cli}
  
     Build GTK+ client:                                 ${with_gtk}

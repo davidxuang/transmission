@@ -15,10 +15,10 @@ Last-Update: 2015-04-04
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index aff673b..7078a24 100644
+index df8cb50..9b19ae7 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -240,15 +240,15 @@ dnl
+@@ -244,15 +244,15 @@ dnl
  dnl file monitoring for the daemon
  
  # Check whether to enable systemd startup notification.

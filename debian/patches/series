@@ -2,5 +2,4 @@ systemd_service_fixes.patch
 fix_freebsd_quota_include.patch
 transition_to_libsystemd.patch
 transmission-daemon_execstop_service.patch
-bts885151_fix_ftcbfs_ac_run_ifelse.patch
 ayatana-indicators.patch
