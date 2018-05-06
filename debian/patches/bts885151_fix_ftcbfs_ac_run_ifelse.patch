@@ -1,8 +1,6 @@
-Index: transmission-2.92/configure.ac
-===================================================================
---- transmission-2.92.orig/configure.ac
-+++ transmission-2.92/configure.ac
-@@ -386,14 +386,12 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -386,14 +386,12 @@ dnl Let's hope it's 1.7 or higher, since
  dnl MINIUPNPC_API_VERSION and we won't have to figure
  dnl it out on our own
  if test "x$upnp_version" = "xunknown" ; then

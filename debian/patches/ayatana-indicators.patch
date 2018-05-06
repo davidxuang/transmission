@@ -3,7 +3,7 @@ Description: Build against Ayatana AppIndicator
 
 --- a/configure.ac
 +++ b/configure.ac
-@@ -522,7 +522,7 @@
+@@ -522,7 +522,7 @@ if test "x$with_gtk" = "xyes" ; then
                                gmodule-2.0 >= $GLIB_MINIMUM
                                gthread-2.0 >= $GLIB_MINIMUM])
      PKG_CHECK_MODULES([LIBAPPINDICATOR],
@@ -12,7 +12,7 @@ Description: Build against Ayatana AppIndicator
                        [have_libappindicator=yes],
                        [have_libappindicator=no])
      if test "x$have_libappindicator" = "xyes"; then
-@@ -686,7 +686,7 @@
+@@ -686,7 +686,7 @@ Configuration:
     Build Command-Line client:                         ${build_cli}
  
     Build GTK+ client:                                 ${with_gtk}
