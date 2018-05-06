@@ -1,15 +1,21 @@
-Description: Transition to libsystemd
- In systemd v209, released over a year ago, the various libsystemd-* libraries
- (libsystemd-journal.so, libsystemd-login.so, libsystem-daemon.so,
- libsystemd-id128.so) were merged into a single libsystemd.so library to reduce
- code duplication and avoid cyclic dependencies
-Author: Sandro Tosi <morph@debian.org>
+From: Sandro Tosi <morph@debian.org>
+Date: Sun, 6 May 2018 15:35:38 -0400
+Subject: Transition to libsystemd
+
+In systemd v209, released over a year ago, the various libsystemd-* libraries
+(libsystemd-journal.so, libsystemd-login.so, libsystem-daemon.so,
+libsystemd-id128.so) were merged into a single libsystemd.so library to reduce
+code duplication and avoid cyclic dependencies
 Origin: vendor
 Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779760
 Forwarded: no
 Last-Update: 2015-04-04
 ---
-This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+ configure.ac | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index aff673b..7078a24 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -240,15 +240,15 @@ dnl

@@ -1,6 +1,14 @@
-Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
-Description: Build against Ayatana AppIndicator
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Sun, 6 May 2018 15:35:38 -0400
+Subject: Build against Ayatana AppIndicator
 
+---
+ configure.ac  | 4 ++--
+ gtk/tr-icon.c | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 904f813..134e711 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -522,7 +522,7 @@ if test "x$with_gtk" = "xyes" ; then
@@ -21,6 +29,8 @@ Description: Build against Ayatana AppIndicator
  
     Build Daemon:                                      ${build_daemon}
  
+diff --git a/gtk/tr-icon.c b/gtk/tr-icon.c
+index a8911b8..a4c5c02 100644
 --- a/gtk/tr-icon.c
 +++ b/gtk/tr-icon.c
 @@ -11,7 +11,7 @@

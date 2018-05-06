@@ -1,4 +1,3 @@
-From 8c8386a7f3f482a9c917f51d28e0042e55f56b3e Mon Sep 17 00:00:00 2001
 From: Mike Gelfand <mikedld@mikedld.com>
 Date: Wed, 7 Sep 2016 01:09:04 +0300
 Subject: [PATCH] Fix coding style and building with !TR_LIGHTWEIGHT
@@ -7,6 +6,8 @@ Subject: [PATCH] Fix coding style and building with !TR_LIGHTWEIGHT
  libtransmission/crypto-utils-openssl.c | 60 +++++++++++++++++++---------------
  1 file changed, 33 insertions(+), 27 deletions(-)
 
+diff --git a/libtransmission/crypto-utils-openssl.c b/libtransmission/crypto-utils-openssl.c
+index 16a37b2..38e1ccc 100644
 --- a/libtransmission/crypto-utils-openssl.c
 +++ b/libtransmission/crypto-utils-openssl.c
 @@ -15,6 +15,7 @@
@@ -62,6 +63,8 @@ Subject: [PATCH] Fix coding style and building with !TR_LIGHTWEIGHT
 -    BN_free (dh->g);
 -    dh->g = g;
 -  }
+-
+-  if (q != NULL) {
 +  if (p != NULL)
 +    {
 +      BN_free (dh->p);
@@ -77,8 +80,7 @@ Subject: [PATCH] Fix coding style and building with !TR_LIGHTWEIGHT
 +      BN_free (dh->g);
 +      dh->g = g;
 +    }
- 
--  if (q != NULL) {
++
 +  if (q != NULL)
      dh->length = BN_num_bits (q);
 -  }
@@ -111,7 +113,7 @@ Subject: [PATCH] Fix coding style and building with !TR_LIGHTWEIGHT
      {
        BN_free (p);
        BN_free (g);
-@@ -329,20 +336,19 @@ tr_dh_make_key (tr_dh_ctx_t   raw_handle
+@@ -329,20 +336,19 @@ tr_dh_make_key (tr_dh_ctx_t   raw_handle,
  {
    DH * handle = raw_handle;
    int dh_size, my_public_key_length;

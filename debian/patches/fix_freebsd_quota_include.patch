@@ -1,3 +1,13 @@
+From: Sandro Tosi <morph@debian.org>
+Date: Sun, 6 May 2018 15:35:38 -0400
+Subject: fix_freebsd_quota_include
+
+---
+ libtransmission/platform-quota.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/libtransmission/platform-quota.c b/libtransmission/platform-quota.c
+index e7d1f6d..91579e0 100644
 --- a/libtransmission/platform-quota.c
 +++ b/libtransmission/platform-quota.c
 @@ -16,7 +16,7 @@

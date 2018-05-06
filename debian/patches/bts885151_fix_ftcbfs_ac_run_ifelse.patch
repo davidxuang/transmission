@@ -1,6 +1,16 @@
+From: Sandro Tosi <morph@debian.org>
+Date: Sun, 6 May 2018 15:35:38 -0400
+Subject: bts885151_fix_ftcbfs_ac_run_ifelse
+
+---
+ configure.ac | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 7078a24..904f813 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -386,14 +386,12 @@ dnl Let's hope it's 1.7 or higher, since
+@@ -386,14 +386,12 @@ dnl Let's hope it's 1.7 or higher, since it provides
  dnl MINIUPNPC_API_VERSION and we won't have to figure
  dnl it out on our own
  if test "x$upnp_version" = "xunknown" ; then

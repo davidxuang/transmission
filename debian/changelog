@@ -1,3 +1,9 @@
+transmission (2.93-3) UNRELEASED; urgency=medium
+
+  * refresh patches
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 15:36:16 -0400
+
 transmission (2.93-2) unstable; urgency=medium
 
   * debian/control
