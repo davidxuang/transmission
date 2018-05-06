@@ -8,8 +8,12 @@ transmission (2.94-1) UNRELEASED; urgency=medium
   * debian/copyright
     - refresh copyright with `decopy`, most importantly add OpenSSL
       exception
+  * debian/control
+    - replace libcurl4-gnutls-dev with libcurl4-openssl-dev as b-d, to reduce
+      the memory usage of transmission-daemon; patch provided by Andrey Gursky;
+      Closes: #865624
 
- -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 19:29:15 -0400
+ -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 19:31:13 -0400
 
 transmission (2.93-2) unstable; urgency=medium
 
