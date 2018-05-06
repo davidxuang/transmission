@@ -1,4 +1,4 @@
-transmission (2.94-1) UNRELEASED; urgency=medium
+transmission (2.94-1) unstable; urgency=medium
 
   * New upstream release
   * refresh patches
@@ -13,7 +13,7 @@ transmission (2.94-1) UNRELEASED; urgency=medium
       the memory usage of transmission-daemon; patch provided by Andrey Gursky;
       Closes: #865624
 
- -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 19:31:13 -0400
+ -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2018 19:34:20 -0400
 
 transmission (2.93-2) unstable; urgency=medium
 
