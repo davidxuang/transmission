@@ -1,6 +1,7 @@
 transmission (2.94-2) UNRELEASED; urgency=medium
 
   * d/copyright: Use https protocol in Format field
+  * d/changelog: Remove trailing whitespaces
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:15:10 +0200
 
@@ -269,7 +270,7 @@ transmission (2.71-1) experimental; urgency=low
 
 transmission (2.61-1) experimental; urgency=low
 
-  * [76d3715e] Imported Upstream version 2.61 
+  * [76d3715e] Imported Upstream version 2.61
                - fixes XSS vulnerability in web client (closes: 683380)
 
  -- Leo Costela <costela@debian.org>  Tue, 31 Jul 2012 13:42:43 +0200
@@ -316,13 +317,13 @@ transmission (2.50-1) unstable; urgency=low
 
   * [f5bae11c] Imported Upstream version 2.50
   * [ce6d0239] bump policy to 3.9.3 (no changes)
-  * [9bb46b5d] drop patch for building against system-wide libs; 
-               upstream now does it better and also builds with 
+  * [9bb46b5d] drop patch for building against system-wide libs;
+               upstream now does it better and also builds with
                libminiupnpc<1.6 again
-  * [3e1b7ba2] drop patch for checking whether to build libutp; fixed 
+  * [3e1b7ba2] drop patch for checking whether to build libutp; fixed
                upstream (Closes: 642538)
   * [bebc613d] update debian/copyright and fully dep5-ify it
-  * [6adf809c] add patch to handle SIGTERM instead of trying to handle 
+  * [6adf809c] add patch to handle SIGTERM instead of trying to handle
                SIGKILL. Thanks to Matt Kraai (Closes: 651365)
 
  -- Leo Costela <costela@debian.org>  Fri, 24 Feb 2012 17:26:01 +0100
@@ -363,7 +364,7 @@ transmission (2.31-1) experimental; urgency=low
   * new upstream release (closes: #628015)
     - now builds with libnotify >= 0.7 (closes: 630305)
     - correctly passes needed libs to build libtransmission (closes: 556501)
-  * debian/transmission-daemon.init: 
+  * debian/transmission-daemon.init:
     - increase STOP_TIMEOUT
     - remove FIXME about pidfile: --exec works well enough in this case
   * debian/patches:
@@ -382,7 +383,7 @@ transmission (2.31-1) experimental; urgency=low
 
 transmission (2.22-1) experimental; urgency=low
 
-  * new upstream release (must go to experimental because of 
+  * new upstream release (must go to experimental because of
     libevent >= 2.0.10 dep) (closes: #614069)
     - fix link to online help (closes: 592960)
     - don't leak FDs with ipv6 (actually fixed in 2.20) (closes: 619534)
@@ -406,9 +407,9 @@ transmission (2.11-1) experimental; urgency=low
 transmission (2.10-2) experimental; urgency=low
 
   * correct binary names in mime files
-  * remove old example script which depended on specific 
+  * remove old example script which depended on specific
     transmission-remote output; added example for download hook script
-  * update replaces/breaks for the /usr/share/icons move to 
+  * update replaces/breaks for the /usr/share/icons move to
     transmission-common (closes: #600637)
 
  -- Leo Costela <costela@debian.org>  Mon, 18 Oct 2010 20:41:44 +0200
@@ -423,7 +424,7 @@ transmission (2.10-1) experimental; urgency=low
     - change VCS headers to point to new git repo
     - bump debhelper version to 8
     - bump policy to 3.9.1 (no changes needed)
-    - rewrite long description to better explain the multiple 
+    - rewrite long description to better explain the multiple
       incarnations of transmission, also correcting to which package
       transmission-remote actually belongs. (closes: #595411,#595412)
   * debian/copyright: long-needed refresh
@@ -446,7 +447,7 @@ transmission (2.01-1) unstable; urgency=low
   * new upstream release
   * debian/transmission-daemon.postinst:
     - don't choke if the config file isn't there (closes: #588010)
-  * debian/control: 
+  * debian/control:
     - bump policy to 3.9.0: use Breaks for file moved between packages
     - remove old conflicts for versions older than the ones in stable
 
@@ -455,7 +456,7 @@ transmission (2.01-1) unstable; urgency=low
 transmission (2.00-1) unstable; urgency=low
 
   * new upstream release (closes: #586503)
-  * debian/patches: 
+  * debian/patches:
     - dropped libevent-build-related patches (integrated upstream)
     - refresh libnatpmp_freebsd patch
 
@@ -475,7 +476,7 @@ transmission (1.93-2) unstable; urgency=low
 
 transmission (1.93-1) unstable; urgency=low
 
-  * new upstream release 
+  * new upstream release
     - don't overwrite settings.json symlink (closes: #579304)
   * debian/patches: refresh dont_build_libevent.patch
 
@@ -483,7 +484,7 @@ transmission (1.93-1) unstable; urgency=low
 
 transmission (1.92-1) unstable; urgency=low
 
-  * new upstream release 
+  * new upstream release
     - fix possible data corruption (closes: #574507)
   * debian/transmission-daemon.default: drop --auth to avoid overriding
     saved settings (closes: #575828)
@@ -494,7 +495,7 @@ transmission (1.92-1) unstable; urgency=low
 transmission (1.91-1) unstable; urgency=low
 
   * new upstream release
-  * debian/transmission-daemon.postrm: don't remove statoverride on 
+  * debian/transmission-daemon.postrm: don't remove statoverride on
     purge (closes: #571934)
 
  -- Leo Costela <costela@debian.org>  Sun, 28 Feb 2010 13:26:07 +0100
@@ -502,7 +503,7 @@ transmission (1.91-1) unstable; urgency=low
 transmission (1.90-1) unstable; urgency=low
 
   * new upstream release
-  * debian/transmission-daemon.postrm: remove statoverride after deleting 
+  * debian/transmission-daemon.postrm: remove statoverride after deleting
     group (closes: #569238)
   * debian/{control,rules}: drop libcanberra-dev and libgconf-dev build-deps
     and ensure we build without them. Please check the bug log for a more
@@ -550,12 +551,12 @@ transmission (1.77-1) unstable; urgency=medium
       - Fix potential data loss by maliciously-crafted .torrent files
   * convert to 3.0 (quilt)
   * debian/patches:
-    - add fr.po.patch: fixes french translation (closes: #563262) 
+    - add fr.po.patch: fixes french translation (closes: #563262)
       (thanks Guillaume Delacour)
     - refresh qt patch
   * debian/transmission-daemon.init: add sbin to PATH (closes: #561392)
   * debian/control: add misc:Depends to all packages
-  * debian/watch: don't mangle upstream version, just ignore beta 
+  * debian/watch: don't mangle upstream version, just ignore beta
     releases using a stricter regex.
 
  -- Leo Costela <costela@debian.org>  Tue, 05 Jan 2010 18:02:22 +0100
@@ -570,7 +571,7 @@ transmission (1.76-1) unstable; urgency=low
 
 transmission (1.75-1) unstable; urgency=low
 
-  * new upstream release 
+  * new upstream release
     - fixes UTF-8 string truncation (closes: #547423)
   * debian/watch: mangle the "b[0-9]+" suffix, used sometimes to mark
     beta versions. Should avoid DEHS thinking there's a new release.
@@ -580,11 +581,11 @@ transmission (1.75-1) unstable; urgency=low
 
 transmission (1.74-1) unstable; urgency=low
 
-  * new upstream release 
+  * new upstream release
     - update miniupnp scripts (closes: #539098)
   * debian/patches: drop miniupnp patch (see above: fixed upstream)
-  * debian/watch: remove old dfsg mangle, check only bz2 (upstream 
-    stopped using gz and is using only bz2/lzma) 
+  * debian/watch: remove old dfsg mangle, check only bz2 (upstream
+    stopped using gz and is using only bz2/lzma)
   * debian/control: bump policy to 3.8.3 (no changes)
   * debian/README.source: added to shut lintian up
 
@@ -623,7 +624,7 @@ transmission (1.73-2) unstable; urgency=low
 transmission (1.73-1) unstable; urgency=low
 
   * New upstream release
-    - Fix bug where user-configured peer limits could be exceeded 
+    - Fix bug where user-configured peer limits could be exceeded
       (closes: #535346)
     - fix rounding issues (closes: #536677)
     - fix creation of torrent files with cli interface (closes: #533609)
@@ -635,7 +636,7 @@ transmission (1.73-1) unstable; urgency=low
 transmission (1.72-1) unstable; urgency=low
 
   * new upstream release: (closes:#533423)
-    - Can now sort the file list by priority, download, and completeness 
+    - Can now sort the file list by priority, download, and completeness
       (closes: #517872)
     - fixed race condition adding file from browser (closes: #500195)
   * debian/control: policy 3.8.2 (no changes)
@@ -678,11 +679,11 @@ transmission (1.60-1) unstable; urgency=low
 
   * new upstream release
   * debian/{rules,control}: add quilt support
-  * debian/patches: 
-      - include fix to pt_BR translation (thanks Flamarion Jorge) 
+  * debian/patches:
+      - include fix to pt_BR translation (thanks Flamarion Jorge)
       (closes: #525944)
       - include fix for ipv6 (thanks Peng tao) (closes: #526256)
-  * debian/transmission-cli.examples: add email script by Alexander 
+  * debian/transmission-cli.examples: add email script by Alexander
     Galanin (closes: #526876)
   * debian/control: bump policy to 3.8.1 (no changes)
 
@@ -690,7 +691,7 @@ transmission (1.60-1) unstable; urgency=low
 
 transmission (1.52-1) unstable; urgency=low
 
-  * new upstream release 
+  * new upstream release
     - fixes creation of spurious Downloads dir (closes: #518792)
   * debian/control:
     - transmission-cli Suggests both transmission and transmission-daemon
@@ -711,7 +712,7 @@ transmission (1.50-1) unstable; urgency=low
     debian/transmission-cli.install,
     debian/transmission-daemon.install: move transmission-remote to
     transmission-cli package (closes: #511572)
-  * debian/control: 
+  * debian/control:
       - strip the "XS" prefix and use the official DM field name
       - changed build-dep on libcurl to "libcurl4-dev | libcurl-dev"
 
@@ -719,9 +720,9 @@ transmission (1.50-1) unstable; urgency=low
 
 transmission (1.40-5) unstable; urgency=low
 
-  * debian/transmission-daemon.{links,install}: fix the conf link 
+  * debian/transmission-daemon.{links,install}: fix the conf link
     (closes: #508750)
-  * debian/transmission-daemon.preinst: add workaround for old configs 
+  * debian/transmission-daemon.preinst: add workaround for old configs
     in /var/lib/transmission-daemon/info
   * debian/transmission-daemon.postrm: add cleanup for /var/lib/ dirs on
     purge
@@ -730,7 +731,7 @@ transmission (1.40-5) unstable; urgency=low
 
 transmission (1.40-4) unstable; urgency=low
 
-  * debian/transmission-daemon.init: add forgotten --retry in restart action 
+  * debian/transmission-daemon.init: add forgotten --retry in restart action
     (closes: #508718)
 
  -- Leo Costela <costela@debian.org>  Sun, 14 Dec 2008 18:50:40 +0100
@@ -743,7 +744,7 @@ transmission (1.40-3) unstable; urgency=low
 
 transmission (1.40-2) unstable; urgency=low
 
-  * debian/transmission-daemon.postinst: add --group to adduser call 
+  * debian/transmission-daemon.postinst: add --group to adduser call
     and add workaround for the lack of the flag in 1.40-1 (closes: #507766)
   * debian/control: make transmission-cli recommend transmission-daemon,
     instead of depending
@@ -757,7 +758,7 @@ transmission (1.40-1) unstable; urgency=low
   * New upstream release (closes: #505846)
     - No longer re-download parts unnecessarily (closes: #500971)
     - badwidth limit code rewritten (closes: #495693)
-  * debian/control: 
+  * debian/control:
     - added transmission-gtk Recommends on xdg-utils (closes: #497978)
     - separated transmission-daemon package (closes: #503744)
     - added "Replaces: transmission-cli" to daemon package
@@ -780,7 +781,7 @@ transmission (1.33-2) unstable; urgency=low
 
   * debian/rules: add quilt patch support
   * debian/control: add build-dep on quilt
-  * debian/patches/rev_6749.diff: Backport fix for memory leak 
+  * debian/patches/rev_6749.diff: Backport fix for memory leak
     (closes: #499828)
 
  -- Leo Costela <costela@debian.org>  Mon, 22 Sep 2008 22:47:32 +0200
@@ -794,13 +795,13 @@ transmission (1.33-1) unstable; urgency=low
 transmission (1.32-1) unstable; urgency=low
 
   * New upstream release (Closes: #494438, #487355)
-  * debian/rules, debian/transmissioncli.{install,manpages}: 
+  * debian/rules, debian/transmissioncli.{install,manpages}:
     - transmission-proxy is no longer shipped
     - add --as-needed to LDFLAGS
   * debian/transmission-common.install: add web directory
     (including upstream jquery since it includes plugins not available
     in libjs-jquery)
-  * debian/copyright: updates from upstream and corrections (many GPL 
+  * debian/copyright: updates from upstream and corrections (many GPL
     files had Licence:MIT fields) (thanks Kevin Bortis for the heads-up)
 
  -- Leo Costela <costela@debian.org>  Fri, 15 Aug 2008 19:33:02 +0200
@@ -827,7 +828,7 @@ transmission (1.20-1) unstable; urgency=low
   * debian/transmission-gtk.menu: better describe menu item (closes: #478212)
   * debian/control, debian/compat: bump debhelper v7
   * debian/rules:
-    - some small changes and cleanups for debhelper v7, preparing for a 
+    - some small changes and cleanups for debhelper v7, preparing for a
       possible migration to dh
     - add dh_icon (from Ubuntu, thanks Fávio Martins)
   * debian/transmission-gtk.install: added usr/share/icons (see above)
@@ -876,11 +877,11 @@ transmission (1.00-1) unstable; urgency=low
     (Closes: #458942, #457825, #458202, #452440, #456038, #454802, #458075).
   * updated maintainer email
   * debian/patches: removed unneeded patches (dealt with DSFG dirs, see below)
-  * debian/control: 
+  * debian/control:
       - updated upstream homepage
-      - add DM-upload:yes 
-  * debian/rules: 
-      - update get-orig-source to not remove dirs, DFSG status resolved 
+      - add DM-upload:yes
+  * debian/rules:
+      - update get-orig-source to not remove dirs, DFSG status resolved
         upstream
       - don't rename transmissioncli manpage, renamed upstream
 
@@ -898,7 +899,7 @@ transmission (0.95.dfsg-2) unstable; urgency=low
 
   * add transmission-common package, to avoid duplication on files
   * install NEWS as changelog
-  * rename README.Debian-source to README.debian (for consistency), document 
+  * rename README.Debian-source to README.debian (for consistency), document
     current open bug about licence issues
   * registering transmission to handle torrent files (Closes: #454801)
     (Philipp Benner)
