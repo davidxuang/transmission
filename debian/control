@@ -22,7 +22,7 @@ Build-Depends: autotools-dev,
                qtbase5-dev,
                qttools5-dev-tools,
                zlib1g-dev
-Standards-Version: 4.1.4
+Standards-Version: 4.3.0
 Vcs-Browser: https://salsa.debian.org/debian/transmission
 Vcs-Git: https://salsa.debian.org/debian/transmission.git
 Homepage: https://transmissionbt.com/

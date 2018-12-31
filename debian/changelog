@@ -6,8 +6,10 @@ transmission (2.94-2) UNRELEASED; urgency=medium
   [ Sandro Tosi ]
   * debian/patches/patch-vendored-libdht.patch
     - patch DHT, as of 0.26 upstream release; Closes: #916705
+  * debian/control
+    - bump Standards-Version to 4.3.0 (no changes needed)
 
- -- Sandro Tosi <morph@debian.org>  Mon, 31 Dec 2018 18:04:48 -0500
+ -- Sandro Tosi <morph@debian.org>  Mon, 31 Dec 2018 18:06:34 -0500
 
 transmission (2.94-1) unstable; urgency=medium
 
