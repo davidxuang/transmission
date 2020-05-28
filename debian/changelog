@@ -1,6 +1,7 @@
 transmission (3.00-1) UNRELEASED; urgency=medium
 
   * New upstream release; Closes: #960362
+    - fix CVE-2018-10756; Closes: #961461
   * debian/patches/*
     - refresh, drop patches
 
