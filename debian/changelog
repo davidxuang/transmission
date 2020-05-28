@@ -1,3 +1,9 @@
+transmission (3.00-1) UNRELEASED; urgency=medium
+
+  * New upstream release; Closes: #960362
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 28 May 2020 00:38:59 -0400
+
 transmission (2.94-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
