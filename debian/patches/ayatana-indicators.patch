@@ -7,11 +7,9 @@ Subject: Build against Ayatana AppIndicator
  gtk/tr-icon.c | 2 +-
  2 files changed, 3 insertions(+), 3 deletions(-)
 
-diff --git a/configure.ac b/configure.ac
-index 9b19ae7..9331c47 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -526,7 +526,7 @@ if test "x$with_gtk" = "xyes" ; then
+@@ -530,7 +530,7 @@ if test "x$with_gtk" = "xyes" ; then
                                gmodule-2.0 >= $GLIB_MINIMUM
                                gthread-2.0 >= $GLIB_MINIMUM])
      PKG_CHECK_MODULES([LIBAPPINDICATOR],
@@ -20,7 +18,7 @@ index 9b19ae7..9331c47 100644
                        [have_libappindicator=yes],
                        [have_libappindicator=no])
      if test "x$have_libappindicator" = "xyes"; then
-@@ -690,7 +690,7 @@ Configuration:
+@@ -694,7 +694,7 @@ Configuration:
     Build Command-Line client:                         ${build_cli}
  
     Build GTK+ client:                                 ${with_gtk}
@@ -29,16 +27,14 @@ index 9b19ae7..9331c47 100644
  
     Build Daemon:                                      ${build_daemon}
  
-diff --git a/gtk/tr-icon.c b/gtk/tr-icon.c
-index a8911b8..a4c5c02 100644
 --- a/gtk/tr-icon.c
 +++ b/gtk/tr-icon.c
-@@ -11,7 +11,7 @@
+@@ -9,7 +9,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
  #ifdef HAVE_LIBAPPINDICATOR
-- #include <libappindicator/app-indicator.h>
-+ #include <libayatana-appindicator/app-indicator.h>
+-#include <libappindicator/app-indicator.h>
++#include <libayatana-appindicator/app-indicator.h>
  #endif
  #include <libtransmission/transmission.h>
  #include <libtransmission/utils.h>

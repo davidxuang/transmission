@@ -1,6 +1,5 @@
 systemd_service_fixes.patch
 fix_freebsd_quota_include.patch
-transition_to_libsystemd.patch
 transmission-daemon_execstop_service.patch
 ayatana-indicators.patch
 patch-vendored-libdht.patch

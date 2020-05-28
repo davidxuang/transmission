@@ -12,8 +12,6 @@ Last-Update: 2017-01-07
  daemon/transmission-daemon.service | 1 +
  1 file changed, 1 insertion(+)
 
-diff --git a/daemon/transmission-daemon.service b/daemon/transmission-daemon.service
-index 3687cf3..207b2e6 100644
 --- a/daemon/transmission-daemon.service
 +++ b/daemon/transmission-daemon.service
 @@ -6,6 +6,7 @@ After=network.target
@@ -22,5 +20,5 @@ index 3687cf3..207b2e6 100644
  ExecStart=/usr/bin/transmission-daemon -f --log-error
 +ExecStop=/bin/kill -s STOP $MAINPID
  ExecReload=/bin/kill -s HUP $MAINPID
+ NoNewPrivileges=true
  
- [Install]

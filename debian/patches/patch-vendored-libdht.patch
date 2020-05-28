@@ -1,6 +1,6 @@
 --- a/third-party/dht/dht.c
 +++ b/third-party/dht/dht.c
-@@ -2578,7 +2578,7 @@ send_closest_nodes(const struct sockaddr
+@@ -2706,7 +2706,7 @@ send_closest_nodes(const struct sockaddr
      int numnodes = 0, numnodes6 = 0;
      struct bucket *b;
  
