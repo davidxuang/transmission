@@ -4,8 +4,10 @@ transmission (3.00-1) UNRELEASED; urgency=medium
     - fix CVE-2018-10756; Closes: #961461
   * debian/patches/*
     - refresh, drop patches
+  * debian/copyright
+    - update upstream copyright info
 
- -- Sandro Tosi <morph@debian.org>  Thu, 28 May 2020 13:26:20 -0400
+ -- Sandro Tosi <morph@debian.org>  Thu, 28 May 2020 21:39:47 -0400
 
 transmission (2.94-2) unstable; urgency=medium
 

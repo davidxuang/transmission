@@ -3,7 +3,7 @@ Upstream-Name: Transmission
 Source: https://github.com/transmission/transmission/issues
 
 Files: *
-Copyright: Copyright 2005-2014. All code is copyrighted by the respective authors.
+Copyright: Copyright 2005-2020. All code is copyrighted by the respective authors.
 License: GPL-2+-OpenSSL
 
 License: GPL-2+-OpenSSL
@@ -24,6 +24,9 @@ License: GPL-2+-OpenSSL
 Files: debian/*
 Copyright: 2015-2018 Sandro Tosi <morph@debian.org>
 License: Expat
+
+Files: libtransmission/jsonsl.c libtransmission/jsonsl.h
+Copyright: Copyright (C) 2012-2015 Mark Nunberg.
 
 
 Files: daemon/*
@@ -88,6 +91,7 @@ Files: daemon/*
        libtransmission/peer-msgs-test.c
        libtransmission/peer-msgs.c
        libtransmission/peer-msgs.h
+       libtransmission/peer-socket.h
        libtransmission/platform.c
        libtransmission/platform.h
        libtransmission/port-forwarding.c
@@ -103,11 +107,20 @@ Files: daemon/*
        libtransmission/rpcimpl.h
        libtransmission/session.c
        libtransmission/session.h
+       libtransmission/session-id.c
+       libtransmission/session-id.h
        libtransmission/stats.c
        libtransmission/stats.h
+       libtransmission/subprocess-posix.c
+       libtransmission/subprocess-test.c
+       libtransmission/subprocess-win32.c
+       libtransmission/subprocess.h
        libtransmission/torrent-ctor.c
+       libtransmission/tr-assert.c
+       libtransmission/tr-assert.h
        libtransmission/tr-getopt.c
        libtransmission/tr-getopt.h
+       libtransmission/tr-macros.h
        libtransmission/trevent.c
        libtransmission/trevent.h
        libtransmission/upnp.c
@@ -122,8 +135,11 @@ Files: daemon/*
        libtransmission/watchdir.h
        qt/*
        utils/*
-Copyright:  2007-2016, Mnemosyne LLC
+Copyright:  2007-2017, Mnemosyne LLC
 License: GPL-2
+
+Files: macosx/Sparkle.framework/*
+Copyright: Copyright © 2014-2017 Sparkle Project. All rights reserved.
 
 Files: qt/icons/Faenza/*
        qt/qtr.pro
@@ -137,9 +153,8 @@ Copyright: 2015, Martin Wendt; Licensed MIT
            2005-2014, jQuery Foundation, Inc. | jquery.org/license
 License: GPL-2+
 
-Files: third-party/miniupnp/*
-Copyright: 2005-2014, Thomas BERNARD
-           2005-2014, Thomas Bernard
+Files: third-party/miniupnpc/*
+Copyright: 2005-2017, Thomas BERNARD
 License: BSD-3-clause
 
 Files: third-party/libutp/*
@@ -157,7 +172,7 @@ Files: web/javascript/common.js
        web/javascript/torrent.js
        web/javascript/transmission.js
 Copyright: Dave Perrett and Malcolm Jarvis
-           Jordan Lee, Dave Perrett, Malcolm Jarvis and Bruno Bierbaumer
+           Charles Kerr, Dave Perrett, Malcolm Jarvis and Bruno Bierbaumer
            Mnemosyne LLC
            Steven Levithan <stevenlevithan.com>
 License: GPL
@@ -177,7 +192,7 @@ Copyright: Chris Venter <chris.venter@gmail.com>
 License: public-domain
 
 Files: third-party/libnatpmp/*
-Copyright: 2007-2011, Thomas BERNARD
+Copyright: 2007-2014, Thomas BERNARD
            2007-2009, Thomas Bernard
 License: BSD-3-clause
 
