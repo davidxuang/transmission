@@ -38,7 +38,7 @@ override_dh_auto_clean:
 	rm -f m4/glib-gettext.m4
 
 override_dh_installchangelogs:
-	dh_installchangelogs -p transmission-common NEWS
+	dh_installchangelogs -p transmission-common NEWS.md
 override_dh_installdocs:
 	dh_installdocs -p transmission-common
 override_dh_installexamples:
