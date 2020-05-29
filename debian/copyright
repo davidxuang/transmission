@@ -22,7 +22,7 @@ License: GPL-2+-OpenSSL
  Those files may, of course, be used on their own under their own terms.
 
 Files: debian/*
-Copyright: 2015-2018 Sandro Tosi <morph@debian.org>
+Copyright: 2015-2020 Sandro Tosi <morph@debian.org>
 License: Expat
 
 Files: libtransmission/jsonsl.c libtransmission/jsonsl.h

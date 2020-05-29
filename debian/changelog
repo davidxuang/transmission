@@ -6,8 +6,9 @@ transmission (3.00-1) UNRELEASED; urgency=medium
     - refresh, drop patches
   * debian/copyright
     - update upstream copyright info
+    - extend packaging copyright years
 
- -- Sandro Tosi <morph@debian.org>  Thu, 28 May 2020 21:39:47 -0400
+ -- Sandro Tosi <morph@debian.org>  Thu, 28 May 2020 21:40:08 -0400
 
 transmission (2.94-2) unstable; urgency=medium
 
