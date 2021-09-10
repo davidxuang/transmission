@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: Sandro Tosi <morph@debian.org>
 Uploaders: Leo Costela <costela@debian.org>
 Build-Depends: autotools-dev,
-               debhelper (>= 9.20160709~),
+               debhelper,
                dh-autoreconf,
-               intltool (>= 0.40),
+               intltool,
                libayatana-appindicator3-dev,
                libcurl4-openssl-dev | libcurl4-dev | libcurl-dev,
                libevent-dev (>= 2.0),

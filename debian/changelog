@@ -1,3 +1,10 @@
+transmission (3.00-2) UNRELEASED; urgency=medium
+
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on debhelper, intltool.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 08 Nov 2020 11:37:55 -0000
+
 transmission (3.00-1) unstable; urgency=medium
 
   * New upstream release; Closes: #960362
