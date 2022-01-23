@@ -4,6 +4,7 @@ transmission (3.00-3) UNRELEASED; urgency=medium
   * Drop menu files and their Debian-specific pixmaps, since transmission-gtk
     & transmission-qt already provide .desktop files
     - drop the lintian overrides related to them
+  * Ship the application pixmap in transmission-common.
 
  -- Sandro Tosi <morph@debian.org>  Sun, 23 Jan 2022 09:04:19 +0100
 
