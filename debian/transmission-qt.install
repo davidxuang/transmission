@@ -1,4 +1,3 @@
-debian/lintian/transmission-qt usr/share/lintian/overrides
 qt/translations/*.qm usr/share/qt5/translations/
 qt/transmission-qt.desktop usr/share/applications/
 usr/bin/transmission-qt
