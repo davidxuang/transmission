@@ -2,3 +2,4 @@ daemon/transmission-daemon.service lib/systemd/system
 debian/README.json etc/transmission-daemon
 debian/settings.json etc/transmission-daemon
 usr/bin/transmission-daemon
+usr/share/man/man1/transmission-daemon.1
