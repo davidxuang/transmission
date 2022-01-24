@@ -3,3 +3,8 @@ usr/bin/transmission-create
 usr/bin/transmission-edit
 usr/bin/transmission-remote
 usr/bin/transmission-show
+usr/share/man/man1/transmission-cli.1
+usr/share/man/man1/transmission-create.1
+usr/share/man/man1/transmission-edit.1
+usr/share/man/man1/transmission-remote.1
+usr/share/man/man1/transmission-show.1

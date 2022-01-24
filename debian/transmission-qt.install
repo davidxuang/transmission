@@ -1,3 +1,4 @@
 qt/translations/*.qm usr/share/qt5/translations/
 qt/transmission-qt.desktop usr/share/applications/
 usr/bin/transmission-qt
+usr/share/man/man1/transmission-qt.1
