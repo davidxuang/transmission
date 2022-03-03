@@ -9,6 +9,26 @@ transmission (3.00-3) UNRELEASED; urgency=medium
     are installed in the right location already by the upstream build system.
   * Ship the AppStream metadata for transmission-gtk.
 
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on libevent-dev,
+      libminiupnpc-dev, libnatpmp-dev and libnotify-dev.
+    + transmission-common: Drop versioned constraint on transmission-gtk in
+      Replaces.
+    + transmission-common: Drop versioned constraint on transmission-gtk in
+      Breaks.
+    + transmission-cli: Drop versioned constraint on transmission-daemon in
+      Replaces.
+    + transmission-cli: Drop versioned constraint on transmission-daemon in
+      Breaks.
+    + transmission-daemon: Drop versioned constraint on lsb-base in Depends.
+    + transmission-daemon: Drop versioned constraint on transmission-cli in
+      Recommends.
+    + transmission-daemon: Drop versioned constraint on transmission-cli in
+      Replaces.
+    + transmission-daemon: Drop versioned constraint on transmission-cli in
+      Breaks.
+
  -- Sandro Tosi <morph@debian.org>  Sun, 23 Jan 2022 09:04:19 +0100
 
 transmission (3.00-2) unstable; urgency=medium
