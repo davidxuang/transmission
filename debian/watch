@@ -1,0 +1,3 @@
+version=3
+opts="downloadurlmangle=s/blob/raw/" \
+https://github.com/transmission/transmission-releases/ /transmission/transmission-releases/blob/master/transmission-([\d\.]+)\.tar\.xz

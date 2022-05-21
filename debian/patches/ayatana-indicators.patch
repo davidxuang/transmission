@@ -1,0 +1,40 @@
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Sun, 6 May 2018 15:35:38 -0400
+Subject: Build against Ayatana AppIndicator
+
+---
+ configure.ac  | 4 ++--
+ gtk/tr-icon.c | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -530,7 +530,7 @@ if test "x$with_gtk" = "xyes" ; then
+                               gmodule-2.0 >= $GLIB_MINIMUM
+                               gthread-2.0 >= $GLIB_MINIMUM])
+     PKG_CHECK_MODULES([LIBAPPINDICATOR],
+-                      [appindicator3-0.1 >= $LIBAPPINDICATOR_MINIMUM],
++                      [ayatana-appindicator3-0.1 >= $LIBAPPINDICATOR_MINIMUM],
+                       [have_libappindicator=yes],
+                       [have_libappindicator=no])
+     if test "x$have_libappindicator" = "xyes"; then
+@@ -694,7 +694,7 @@ Configuration:
+    Build Command-Line client:                         ${build_cli}
+ 
+    Build GTK+ client:                                 ${with_gtk}
+-      * libappindicator for an Ubuntu-style tray:     ${use_libappindicator}
++      * libayatana-appindicator for Ubuntu-like tray: ${use_libappindicator}
+ 
+    Build Daemon:                                      ${build_daemon}
+ 
+--- a/gtk/tr-icon.c
++++ b/gtk/tr-icon.c
+@@ -9,7 +9,7 @@
+ #include <glib/gi18n.h>
+ #include <gtk/gtk.h>
+ #ifdef HAVE_LIBAPPINDICATOR
+-#include <libappindicator/app-indicator.h>
++#include <libayatana-appindicator/app-indicator.h>
+ #endif
+ #include <libtransmission/transmission.h>
+ #include <libtransmission/utils.h>
