@@ -31,6 +31,14 @@ transmission (3.00-3) UNRELEASED; urgency=medium
 
  -- Sandro Tosi <morph@debian.org>  Sun, 23 Jan 2022 09:04:19 +0100
 
+transmission (3.00-2.1) unstable; urgency=low
+
+  [ Steve Langasek ]
+  * debian/patches/openssl3-compat.patch: Compatibility with OpenSSL 3.
+    (Closes: #1006584)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 21 May 2022 09:22:10 +0200
+
 transmission (3.00-2) unstable; urgency=medium
 
   [ Debian Janitor ]

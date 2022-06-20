@@ -4,3 +4,4 @@ transmission-daemon_execstop_service.patch
 ayatana-indicators.patch
 patch-vendored-libdht.patch
 build_new_autoconf.patch
+openssl3-compat.patch
