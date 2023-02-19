@@ -3,10 +3,8 @@ Section: net
 Priority: optional
 Maintainer: Sandro Tosi <morph@debian.org>
 Uploaders: Leo Costela <costela@debian.org>
-Build-Depends: autotools-dev,
-               debhelper,
-               dh-autoreconf,
-               intltool,
+Build-Depends: cmake,
+               debhelper-compat (= 13),
                libayatana-appindicator3-dev,
                libcurl4-openssl-dev | libcurl4-dev | libcurl-dev,
                libevent-dev,

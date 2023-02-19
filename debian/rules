@@ -1,14 +1,7 @@
 #!/usr/bin/make -f
 
-export V=1
+#export V=1
 #export DH_VERBOSE=1
-export QT_SELECT=qt5
-
-
-DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
-ifeq ($(DEB_HOST_ARCH_OS),linux)
-	DH_EXTRA_ARGS += --with systemd
-endif
 
 %:
 	dh $@ $(DH_EXTRA_ARGS)
