@@ -16,16 +16,16 @@ Last-Update: 2014-10-16
  daemon/transmission-daemon.service | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/daemon/transmission-daemon.service b/daemon/transmission-daemon.service
-index 8a1d429..3687cf3 100644
---- a/daemon/transmission-daemon.service
-+++ b/daemon/transmission-daemon.service
-@@ -3,7 +3,7 @@ Description=Transmission BitTorrent Daemon
- After=network.target
+Index: repo/daemon/transmission-daemon.service
+===================================================================
+--- repo.orig/daemon/transmission-daemon.service
++++ repo/daemon/transmission-daemon.service
+@@ -4,7 +4,7 @@ Wants=network-online.target
+ After=network-online.target
  
  [Service]
 -User=transmission
 +User=debian-transmission
  Type=notify
- ExecStart=/usr/bin/transmission-daemon -f --log-error
+ ExecStart=/usr/bin/transmission-daemon -f --log-level=error
  ExecReload=/bin/kill -s HUP $MAINPID
