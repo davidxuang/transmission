@@ -1,4 +1,4 @@
-transmission (3.00-3) UNRELEASED; urgency=medium
+transmission (4.0.0-1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * Drop menu files and their Debian-specific pixmaps, since transmission-gtk
@@ -29,7 +29,18 @@ transmission (3.00-3) UNRELEASED; urgency=medium
     + transmission-daemon: Drop versioned constraint on transmission-cli in
       Breaks.
 
- -- Sandro Tosi <morph@debian.org>  Sun, 23 Jan 2022 09:04:19 +0100
+  [ Leo Antunes ]
+  * [4ce635f3] fix(watch): update github path
+  * [af4837c8] New upstream version 4.0.0
+  * [a8cce533] feat(rules): update for cmake
+  * [c9cfb739] chore: drop out-of-date patches
+  * [12303dea] chore: bump dh to 13
+  * [00fa1274] fix: update build-deps
+  * [d01ed004] fix: update rules to (re)enable features
+  * [9535e0b8] chore: drop upstart file
+  * [ce61a090] fix: update paths for newer debhelper
+
+ -- Leo Antunes <costela@debian.org>  Wed, 22 Feb 2023 22:12:50 +0100
 
 transmission (3.00-2.1) unstable; urgency=low
 
