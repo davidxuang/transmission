@@ -180,7 +180,6 @@ License: GPL
 Files: third-party/libb64/AUTHORS
        third-party/libb64/CHANGELOG
        third-party/libb64/INSTALL
-       third-party/libb64/LICENSE
        third-party/libb64/Makefile.am
        third-party/libb64/README
        third-party/libb64/b64/*
@@ -217,10 +216,6 @@ License: ISC
 Files: m4/acx-pthread.m4
 Copyright: 2007, Steven G. Johnson <stevenj@alum.mit.edu>
 License: GPL-3+
-
-Files: web/LICENSE
-Copyright: 1989-1991, Free Software Foundation, Inc
-License: GPL-2+
 
 License: BSD-3-clause
  /usr/share/common-licenses/BSD
