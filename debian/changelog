@@ -41,7 +41,7 @@ transmission (4.0.1-1) UNRELEASED; urgency=medium
   * [ce61a090] fix: update paths for newer debhelper
 
   [ Barak A. Pearlmutter ]
-  * New upstream release
+  * New upstream release; Closes: #1030857
   * Trim trailing whitespace.
   * Set upstream metadata fields: Bug-Database.
   * Remove listed license files (third-party/libb64/LICENSE, web/LICENSE) from
