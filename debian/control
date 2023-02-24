@@ -57,7 +57,7 @@ Description: lightweight BitTorrent client (common files)
 Package: transmission-cli
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: transmission-common (= ${source:Version}),
+Depends: transmission-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Suggests: transmission-daemon (= ${binary:Version}),
@@ -74,7 +74,7 @@ Description: lightweight BitTorrent client (command line programs)
 Package: transmission-gtk
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: transmission-common (= ${source:Version}),
+Depends: transmission-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: xdg-utils
@@ -88,7 +88,7 @@ Description: lightweight BitTorrent client (GTK+ interface)
 Package: transmission-qt
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: transmission-common (= ${source:Version}),
+Depends: transmission-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: xdg-utils
@@ -102,7 +102,7 @@ Description: lightweight BitTorrent client (Qt interface)
 Package: transmission-daemon
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}, adduser
-Depends: transmission-common (= ${source:Version}),
+Depends: transmission-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: transmission-cli
