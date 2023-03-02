@@ -1,0 +1,5 @@
+# these are generated from web/src/*
+transmission source: source-is-missing [web/public_html/index.html]
+transmission source: source-is-missing [web/public_html/transmission-app.js]
+# does not get installed
+transmission source: source-is-missing [third-party/fmt/doc/_static/bootstrap.min.js]
