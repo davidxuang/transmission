@@ -2,7 +2,7 @@ Source: transmission
 Section: net
 Priority: optional
 Maintainer: Sandro Tosi <morph@debian.org>
-Uploaders: Leo Costela <costela@debian.org>
+Uploaders: Leo Antunes <costela@debian.org>
 Build-Depends: cmake,
                debhelper-compat (= 13),
                libayatana-appindicator3-dev,
