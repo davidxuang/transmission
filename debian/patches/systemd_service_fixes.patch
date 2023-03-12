@@ -16,10 +16,10 @@ Last-Update: 2014-10-16
  daemon/transmission-daemon.service | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-Index: repo/daemon/transmission-daemon.service
-===================================================================
---- repo.orig/daemon/transmission-daemon.service
-+++ repo/daemon/transmission-daemon.service
+diff --git a/daemon/transmission-daemon.service b/daemon/transmission-daemon.service
+index eaf3d85..e0d1224 100644
+--- a/daemon/transmission-daemon.service
++++ b/daemon/transmission-daemon.service
 @@ -4,7 +4,7 @@ Wants=network-online.target
  After=network-online.target
  
