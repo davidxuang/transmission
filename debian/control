@@ -115,14 +115,14 @@ Description: lightweight BitTorrent client (daemon)
  This package contains the transmission-daemon. For the associated
  transmission-remote, see the package transmission-cli.
 
-Package: libtransmission-dev
-Section: libdevel
-Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}
-Description: lightweight BitTorrent client (development library)
- Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
- and daemon form). All its incarnations feature a very simple, intuitive
- interface on top on an efficient, cross-platform back-end.
- .
- This package contains the static library and associated #include file.
+#Package: libtransmission-dev
+#Section: libdevel
+#Architecture: any
+#Pre-Depends: ${misc:Pre-Depends}
+#Depends: ${misc:Depends}
+#Description: lightweight BitTorrent client (development library)
+# Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+# and daemon form). All its incarnations feature a very simple, intuitive
+# interface on top on an efficient, cross-platform back-end.
+# .
+# This package contains the static library and associated #include file.

@@ -1,2 +1,2 @@
-usr/lib/*/libtransmission.a
-usr/include/transmission
+#usr/lib/*/libtransmission.a
+#usr/include/transmission

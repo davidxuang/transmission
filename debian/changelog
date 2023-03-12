@@ -52,7 +52,7 @@ transmission (4.0.1-1) unstable; urgency=medium
   * Fix day-of-week for changelog entries 2.33-1, 1.40-5.
   * Bump Standards-Version to 4.6.2
   * Rules-Requires-Root: no
-  * Generate library package libtransmission; Closes: #1001005
+  * Generate library package libtransmission
   * Set up doc dir links using dh_installdocs --link-doc=transmission-common and
     change packages transmission and transmisison-common from arch:all to
     arch: any in order to allow documentation symbolic links.
