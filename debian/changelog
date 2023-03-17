@@ -1,3 +1,10 @@
+transmission (4.0.2-1) unstable; urgency=medium
+
+  * [7d7418a5] New upstream version 4.0.2
+  * [183b7e9b] chore(patches): drop groff fix; applied upstream
+
+ -- Leo Antunes <costela@debian.org>  Fri, 17 Mar 2023 20:26:37 +0100
+
 transmission (4.0.1-1) unstable; urgency=medium
 
   [ Pino Toscano ]
