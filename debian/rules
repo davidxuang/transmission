@@ -18,3 +18,7 @@ execute_after_dh_auto_install:
 
 override_dh_installdocs:
 	dh_installdocs --link-doc=transmission-common
+
+# bug #949296: "dwz: debian/cppcheck/usr/bin/cppcheck: Unknown DWARF DW_OP_255"
+override_dh_dwz:
+	dh_dwz -a || true
