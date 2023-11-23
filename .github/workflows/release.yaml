@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '**-0+**'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Extract upstream version
+        uses: olegtarasov/get-tag@v2.1.2
+        id: tag
+        with:
+          tagRegex: "([0-9.]+).+"
+      - name: Setup project
+        run: |
+          sudo apt install debhelper
+          aria2c https://github.com/transmission/transmission/releases/download/$GIT_TAG_NAME/transmission-$GIT_TAG_NAME.tar.xz -o ../transmission_$GIT_TAG_NAME.orig.tar.xz
+          rm .github -r
+      - name: Build source package
+        run: dpkg-buildpackage -S -d
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            ../transmission_${{ steps.tag.outputs.tag }}*.orig.tar.*
+            ../transmission_${{ steps.tag.outputs.tag }}*.debian.tar.*
+            ../transmission_${{ steps.tag.outputs.tag }}*.dsc
