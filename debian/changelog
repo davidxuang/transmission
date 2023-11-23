@@ -1,3 +1,12 @@
+transmission (4.0.4-0+0) unstable; urgency=medium
+
+  * [2a86c2d6] New upstream version 4.0.3
+  * [a6f8194e] New upstream version 4.0.4
+  * [8e9efe97] feat: allow fallback to GTK 3
+  * [59bce436] fix: FTBFS for dwz errors on bullseye
+
+ -- Dawei Huang <davidxuang@live.com>  Thu, 23 Nov 2023 23:39:01 +0800
+
 transmission (4.0.2-1) unstable; urgency=medium
 
   * [7d7418a5] New upstream version 4.0.2
