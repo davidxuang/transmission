@@ -1,3 +1,9 @@
+transmission (4.0.5-0+0) unstable; urgency=medium
+
+  * [d0391a6e] New upstream version 4.0.5
+
+ -- Dawei Huang <davidxuang@live.com>  Fri, 15 Dec 2023 14:36:21 +0800
+
 transmission (4.0.4-0+0) unstable; urgency=medium
 
   * [2a86c2d6] New upstream version 4.0.3
