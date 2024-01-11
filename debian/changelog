@@ -1,3 +1,9 @@
+transmission (4.0.5-0+1) unstable; urgency=medium
+
+  * [b948b466] fix: build error on GTKMM-4 (transmission/transmission#6393)
+
+ -- Dawei Huang <davidxuang@live.com>  Fri, 12 Jan 2024 00:36:12 +0800
+
 transmission (4.0.5-0+0) unstable; urgency=medium
 
   * [d0391a6e] New upstream version 4.0.5
